@@ -1,0 +1,75 @@
+<!DOCTYPE!>
+<html>
+    <head>
+        <title> Object Recognition Model
+            <style>   
+                h1 {   
+                    color: white ;   
+                }   
+                H1 {   
+                    color:blue !important;   
+                }   
+                body {   
+                    background-color:lightblue !important;   
+                    text-align:center;   
+                    background-color:red;
+                }   
+            </style> 
+            <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+            
+            <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            
+            <link rel="stylesheet" type="text/css" href="style.css">
+            </head>
+            <section>
+                <div class="container">
+                    <br>
+                    <h1>
+                        Object recognition Model
+                    </h1>
+                    <br>
+                    <br>
+                    <h2>
+                        This Model Is Trained to Identify The Following Objects-
+                        
+                     1. Elder Brother
+                     <br>
+                     2. Father
+                     <br>
+                     3.Younger Brother
+                     <br>
+                     4.Mother
+                     <br>
+                     
+                    </h2>
+                    
+                    <label>Webcam View - </label>
+                    <div id="camera"></div>
+                    <br><br>
+                    <div id="result"></div>
+                    <br><br>
+                  <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
+                    <br><br>
+                    <button onclick="check();" class="btn btn-success">identify Image</button>
+              
+                    <br><br>
+              
+                    <p style="font-size: 22px;">Object :  <span id="result_object_name"></span></p>
+                    <p style="font-size: 22px;">Accuracy :  <span id="result_object_accuracy"</span></span></p>
+                  </center>
+              
+                </div>
+            </section>
+              <script src="main.js"></script>
+              
+                </body>
+            </title>
+
+              </html>
